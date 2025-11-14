@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+*{
+  margin: 0;
+  padding: 0;  
+}
+
+
+.div-layout{
+  padding-top: 50px;
+  position:"relative";
+  background-color:rgb(14, 13, 13);
+  height:100vh;
+  width:100%
+}
+
+button{
+  padding: 5 5 5 5;
+  border-radius: 5px;
+  background-color: rgb(8, 46, 33);
+}
+
+button:hover{
+    background-color: rgb(161, 66, 66);
+}
+
+button:disabled{
+  background-color: grey;
+}
+
+
+

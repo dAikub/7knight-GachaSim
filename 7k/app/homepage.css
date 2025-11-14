@@ -1,0 +1,17 @@
+.youtube{
+    position: absolute;
+    left:50px
+}
+
+
+.image-fade {
+  opacity: 1;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+
+  /* ให้ภาพจางด้านล่าง */
+  -webkit-mask-image: linear-gradient(to bottom, black -50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}

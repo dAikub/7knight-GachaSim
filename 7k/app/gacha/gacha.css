@@ -1,0 +1,199 @@
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 170px 0 170px;
+    z-index: 1;
+    background-color: grey;
+    min-height: 50vh;
+
+}
+
+button{
+  padding: 5 5 5 5;
+  border-radius: 5px;
+  background-color: rgb(8, 46, 33);
+}
+
+button:hover{
+    background-color: rgb(161, 66, 66);
+}
+
+button:disabled{
+  background-color: grey;
+}
+
+
+
+
+.status{
+  display:flex;
+  justify-content: space-between;
+  margin: 50px 170px 30px 170px;
+  padding: 0px 10px 0 10px;
+}
+
+
+
+
+
+
+.character-receivce {
+  position: absolute;
+  left: 50%;
+  transform: translate( -50%);
+  z-index: 1;
+}
+/* * 1. ตัวหุ้ม (Wrapper)
+ * เราใช้ display: inline-block เพื่อให้มันหุ้มรูปพอดี
+ * และ position: relative เพื่อให้เราสร้าง "เงา" หรือ "แสง" ได้
+*/
+.character-reveal-wrapper {
+  display: inline-block;
+  position: relative;
+  
+  /* เพิ่ม transition เพื่อให้แสงค่อยๆ สว่างขึ้น (ไม่กระโดด) */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* * 2. กำหนดสีของแสงตาม Rarity
+ * เราใช้ box-shadow เพื่อสร้างแสงฟุ้งรอบๆ
+ * box-shadow : [แนวนอน] [แนวตั้ง] [ความฟุ้ง (blur)] [ขนาดแสง (spread)] [สี]
+*/
+
+.character-reveal-wrapper.rarity-rare {
+  animation: 
+          pulse-rare 2s forwards,
+          glow-pulse 1.7s infinite ease-in-out;
+}
+.character-reveal-wrapper.rarity-legendary {
+  animation: pulse-legendary 2s forwards,
+            glow-pulse 1.7s infinite ease-in-out;
+}
+.character-reveal-wrapper.rarity-sven7Origin {
+  animation: pulse-sven7Origin 4s forwards,
+            glow-pulse 1.7s infinite ease-in-out;
+}
+  
+
+
+
+.character-reveal-wrapper img {
+  position: relative; 
+  z-index: 2; 
+  
+
+  border-radius: 10px; 
+}
+
+.character-reveal-wrapper {
+   border-radius: 50%; /* ทำให้กรอบเป็นวงกลม */
+}
+
+@keyframes pulse-legendary {
+  70%{
+  box-shadow: 0 0 80px 5px #f1c40f; 
+  }
+  100%{
+  box-shadow: 0 0 50px 5px #f1c40f; 
+  }
+}
+
+
+@keyframes pulse-rare {
+  70%{
+  box-shadow: 0 0 80px 5px #3498db;
+  }
+  100%{
+  box-shadow: 0 0 30px 0.5px #3498db; 
+  }
+}
+
+@keyframes pulse-sven7Origin {
+  30%{
+  box-shadow: 0 0 100px 20px #cf0983;
+  }
+  50%{
+  box-shadow: 0 0 130px 50px #cf0983,
+              /* 0 0 130px 20px #860303; */
+  }
+  100%{
+  box-shadow: 0 0 100px 20px #cf0983;
+  }
+}
+
+
+
+
+
+
+
+
+
+.character-reveal-wrapper-fire {
+  display: inline-block;
+  position: relative;
+  border-radius: 20%;
+  
+  /* เพิ่ม transition เพื่อให้แสงค่อยๆ สว่างขึ้น (ไม่กระโดด) */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.character-reveal-wrapper-fire img {
+  position: relative; 
+  z-index: 2; 
+  
+
+  border-radius: 10px; 
+}
+
+
+
+.character-reveal-wrapper-fire{
+  animation: 
+    fire-flicker-gold 2.5s ease-in-out;
+}
+
+
+
+
+
+@keyframes glow-pulse {
+  0%{
+    transform: scale(1);
+
+  }
+  50%{
+    transform: scale(0.98);
+    /* filter: brightness(1) */
+
+  }
+  100%{
+    transform: scale(1);
+
+  }
+}
+
+
+@keyframes fire-flicker-gold {
+
+  20%{
+    box-shadow:
+      0 0 50px 16px rgba(255, 215, 0, 0.9),
+      0 0 80px 34px rgba(255, 140, 0, 0.6),
+      0 0 100px 64px rgba(255, 69, 0, 0.4)
+  }
+  60%{
+    box-shadow:
+      0 0 100px 12px rgba(255, 215, 0, 0.7),
+      0 0 180px 2px rgba(255, 140, 0, 0.5),
+      0 0 200px 56px rgba(255, 69, 0, 0.3)
+  }
+  100%{
+    box-shadow:
+      0 0 1px 0px rgba(255, 215, 0, 0.7),
+      0 0 1px 0px rgba(255, 140, 0, 0.5),
+      0 0 50px 0px rgba(255, 69, 0, 0.3)
+  }
+
+}
