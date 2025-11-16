@@ -1,7 +1,6 @@
 nav{
     background-color: rgb(24, 23, 23);
     display:flex;
-    flex-wrap: wrap;
     padding: 10px 10px 10px 10px;
     justify-content: space-between;
     position: fixed;

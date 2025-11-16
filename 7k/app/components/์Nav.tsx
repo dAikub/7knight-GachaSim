@@ -3,7 +3,7 @@ import "./components.css";
 
 export default function Nav(){
     return(
-        <nav className="items-center text-[1.4rem] ]" >
+        <nav className="items-center text-[1.4rem] flex fixed w-full flex-wrap  ]" >
                 <div className="pl-[2rem]">
                     <Link href="/"> Home</Link>
                 </div>

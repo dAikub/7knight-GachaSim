@@ -17,13 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en" style={{fontSize:"65.5%"}}>
       <body>
-
           <Nav/>
-
-          <div className="div-layout">
+          <div className="div-layout overflow-x-hidden">
             {children}
           </div>
-
 
 
       </body>

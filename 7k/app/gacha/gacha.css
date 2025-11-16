@@ -1,18 +1,61 @@
 
-ul{
+@media (min-width: 640px) {
+  .img-scale {
+    width: 7.3rem;
+    height: 7.3rem;
+    
+  }
+}
+
+/* Desktop / Large screen (example: min-width 1024px) */
+@media (min-width: 1024px) {
+  .img-scale {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media (min-width: 640px){  
+  ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 7rem 0 7rem;
+    z-index: 1;
+    min-height: 7.3rem;
+  }
+}
+
+
+@media (min-width: 1024px){  
+  ul{
     display: flex;
     justify-content: space-between;
     margin: 0 17rem 0 17rem;
     z-index: 1;
     min-height: 12rem;
+  }
 }
 
-.show-percents{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 20rem 0 20rem;
-    min-height: 23rem;
+
+@media (min-width: 640px){  
+  .show-percents{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 9rem 0 9rem;
+      min-height: 23rem;
+  }
 }
+
+@media (min-width: 1024px){  
+  .show-percents{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 20rem 0 20rem;
+      min-height: 23rem;
+      font-size: 1.5rem;
+  }
+}
+
 
 button{
   padding: 1rem 1rem 1rem 1rem;
@@ -34,7 +77,7 @@ button:disabled{
 .status{
   display:flex;
   justify-content: space-between;
-  margin: 5rem 17rem 10rem 17rem;
+
   padding: 0px 1rem 0 1rem;
 }
 
