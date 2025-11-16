@@ -3,14 +3,13 @@ import "./components.css";
 
 export default function Nav(){
     return(
-        <nav>
-                <div>
+        <nav className="items-center text-[1.4rem] ]" >
+                <div className="pl-[2rem]">
                     <Link href="/"> Home</Link>
                 </div>
 
-                <div style={{display:"flex",gap:"5px"}}>
-                        
-                        <Link href="https://github.com/dAikub"> Github</Link>
+                <div className="pr-[2rem]" style={{display:"flex",gap:"5px"}}>
+                    <Link href="https://github.com/dAikub"> Github</Link>
                 </div>
         </nav>
     )

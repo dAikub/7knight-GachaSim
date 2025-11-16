@@ -1,6 +1,9 @@
 .youtube{
-    position: absolute;
-    left:50px
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translate(-50%);
+  z-index: 1;
 }
 
 
@@ -15,3 +18,52 @@
   -webkit-mask-image: linear-gradient(to bottom, black -50%, transparent 100%);
   mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
+
+
+div.golang{
+  margin-top:10rem
+}
+
+.menu-container {
+  justify-content: space-between;
+  
+  padding: 4rem;
+  display: flex;
+  margin: 10rem 15rem 0rem 15rem;
+}
+
+.card {
+  width: 26rem;
+  height: 46rem;
+  border-radius: 1.5rem;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  /* opacity: 35%; */
+  
+  transform: rotate(-0deg) skewY(-4deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #1b1b1b
+}
+
+.card:hover {
+  opacity: 100%;
+  transform: rotate(-0deg) skewY(-4deg) scale(1.06) translateY(-0.6rem);
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.35);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 0 0 35px rgb(255, 0, 0);
+  z-index: 80;
+}
+

@@ -16,7 +16,7 @@ const slot:Rarity[] = ["rare","legendary","legendary","legendary","sven7Origin"]
 
 const allowedMapping:Record<Rarity,Rarity[]> = {
     sven7Origin:["sven7Origin","legendary","legendary"],
-    legendary:["legendary","legendary","legendary","rare"],
+    legendary:["legendary","legendary","legendary","legendary","legendary","legendary","rare"],
     rare:["legendary","rare"]
 }
 
