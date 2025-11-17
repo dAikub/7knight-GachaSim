@@ -9,7 +9,7 @@ export default function Page(){
         <>
 
             <div className="youtube   lg:top-[10rem]; sm:top-[50%] sm:transform sm:-translate-y-1/2">
-                <iframe width="560" height="315" allow="autoplay; encrypted-media; fullscreen" allowFullScreen  src="https://www.youtube.com/embed/W-luC-oW-M0?si=QqTLz0PBcYPYx7BU&autoplay=1&mute=1&loop=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" ></iframe>
+                <iframe width="560" height="315" allow="autoplay; encrypted-media; fullscreen" allowFullScreen  src="https://www.youtube.com/embed/W-luC-oW-M0?si=QqTLz0PBcYPYx7BU&autoplay=1&mute=1&loop=1" title="YouTube video player" referrerPolicy="strict-origin-when-cross-origin" ></iframe>
             </div>
             <div style={{position:"relative",width:"100%",height:"45rem"}}>
               <Image className="image-fade" src="/banner2.jpg" alt="" fill></Image>
