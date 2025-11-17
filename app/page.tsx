@@ -28,32 +28,32 @@ export default function Page(){
 
             <div className="menu-container lg:gap-[8rem] sm:gap-[5rem] sm:mt-[3rem]">
 
-                <div className="lg:w-[26.001rem] sm:w-[13.001rem] flex flex-col ">
-                    <p className="lg:text-[3rem] sm:text-[1.5rem] break-all transform -skew-y-4 lg:mb-12 sm:m-[0_0_1.3rem_0] text-center">Mercure's Lab</p>
+                <div className="lg:w-[26.001rem] sm:w-[13.001rem] flex flex-col transform -skew-y-4">
+                    <p className="lg:text-[3rem] sm:text-[1.5rem] break-all lg:mb-12 sm:m-[0_0_1.3rem_0] text-center">Mercure's Lab</p>
                     <Link href="/gacha" className="card border border-amber-500 lg:w-[26.001rem] lg:h-[46.001rem] sm:w-[13.001rem] sm:h-[23.001rem]" 
                     style={{ backgroundImage: "url('/homepage/Kyle7_box.webp')"}}>
                     </Link>
                 </div>
                 
 
-                <div className="lg:w-[26.001rem] sm:w-[13.001rem] flex flex-col ">
-                    <p className="lg:text-[3rem] sm:text-[1.5rem] break-all transform -skew-y-4 lg:mb-12 sm:m-[0_0_1.3rem_0] text-center">Summon Heros</p>
+                <div className="lg:w-[26.001rem] sm:w-[13.001rem] flex flex-col transform -skew-y-4 ">
+                    <p className="lg:text-[3rem] sm:text-[1.5rem] break-all lg:mb-12 sm:m-[0_0_1.3rem_0] text-center">Summon Heros</p>
                     <div className="relative lg:w-[26.001rem] lg:h-[46.001rem] sm:w-[13.001rem] sm:h-[23.001rem]  ">
-                        <Image className="transform -skew-y-4 opacity-20 border border-amber-500" src="/Fai.webp" alt="" fill style={{borderRadius:"15px",background:"#1b1b1b",objectFit:"fill"}}></Image>
+                        <Image className=" opacity-20 border border-amber-500" src="/Fai.webp" alt="" fill style={{borderRadius:"15px",background:"#1b1b1b",objectFit:"fill"}}></Image>
                         <div className="overlay">
-                            <h1 className="text-2xl sm:text-center">Comming soon</h1>
+                            <h1 className="text-2xl sm:text-center "style={{transform:"skewY(4deg)"}}>Comming soon</h1>
                         </div>
                     </div>
                 </div>
 
 
 
-                <div className="lg:w-[26.001rem] sm:w-[13.001rem] flex flex-col ">
-                    <p className="lg:text-[3rem] sm:text-[1.5rem] break-all transform -skew-y-4 lg:m-[0_0_3rem_0] sm:m-[0_0_1.3rem_0] text-center">Fuse</p>
+                <div className="lg:w-[26.001rem] sm:w-[13.001rem] flex flex-col transform -skew-y-4">
+                    <p className="lg:text-[3rem] sm:text-[1.5rem] break-all  lg:m-[0_0_3rem_0] sm:m-[0_0_1.3rem_0] text-center">Fuse</p>
                     <div className="relative lg:w-[26.001rem] lg:h-[46.001rem] sm:w-[13.001rem] sm:h-[23.001rem]">
-                        <Image className="transform -skew-y-4 opacity-20 border border-amber-500 " src="/homepage/Teo7_box.webp" alt="" fill style={{borderRadius:"15px",background:"#1b1b1b",objectFit:"fill"}}></Image>
-                        <div className="overlay">
-                            <h1 className="text-2xl sm:text-center">Comming soon</h1>
+                        <Image className=" opacity-20 border border-amber-500 " src="/homepage/Teo7_box.webp" alt="" fill style={{borderRadius:"15px",background:"#1b1b1b",objectFit:"fill"}}></Image>
+                        <div className="overlay transform ">
+                            <h1 className="text-2xl sm:text-center" style={{transform:"skewY(4deg)"}}>Comming soon</h1>
                         </div>
                     </div>
                 </div>
