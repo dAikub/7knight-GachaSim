@@ -1,1 +1,1 @@
-#7k-gachasim.netlify.app
+7k-gachasim.netlify.app/
