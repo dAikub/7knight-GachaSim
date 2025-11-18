@@ -26,18 +26,17 @@ export default function RollPage() {
 
   return (
     <div style={{position:"relative"}}>
-{/* sm:m-[5rem_17rem_1rem_17rem] */}
 
-      <div className="status lg:m-[9rem_17rem_6rem_17rem] sm:m-[5rem_5rem_3rem_5rem]">
-        <h1 className="lg:text-3xl sm:text-[16px]" >Total Spend: {gold.toLocaleString()} Gold</h1>
-        <h1 className="lg:text-3xl sm:text-[16px]">Base on 800 point</h1>
+      <div className="status m-[5rem_4rem_3rem_4rem] lg:m-[9rem_17rem_6rem_17rem] sm:m-[5rem_5rem_3rem_5rem]">
+        <h1 className="text-[12px] lg:text-3xl sm:text-[16px]" >Total Spend: {gold.toLocaleString()} Gold</h1>
+        <h1 className="text-[12px] lg:text-3xl sm:text-[16px]">Base on 800 point</h1>
       </div>
       
-      <div className="character-receivce">
+      <div className="character-receivce mt-[50px] ">
         {final ? (
           <div className={final.rarity==="rare" ? `character-reveal-wrapper rarity-${final.rarity}
             `: "character-reveal-wrapper-fire"}>
-            {<Image className="w-[12.01rem] h-[12.01rem]" src={final.img} alt="" width={120} height={120} ></Image>}
+            {<Image className="w-[8rem] h-[8rem] sm:w-[10rem] sm:h-[10rem]  lg:w-[12.01rem] lg:h-[12.01rem]" src={final.img} alt="" width={120} height={120} ></Image>}
           </div>
         ) : (
           <p></p>
@@ -55,6 +54,10 @@ export default function RollPage() {
           </li>
         ))}
       </ul>
+
+
+
+
       <div className="show-percents">
         <h1 style={{ display: showText ? "block" : "none" }}>37.12%</h1>
         <h1 style={{ display: showText ? "block" : "none" }}>21.6%</h1>

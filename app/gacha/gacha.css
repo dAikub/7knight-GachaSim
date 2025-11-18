@@ -1,3 +1,10 @@
+.img-scale {
+   width: 5rem;
+  height: 5rem;
+}
+
+
+
 
 @media (min-width: 640px) {
   .img-scale {
@@ -14,6 +21,15 @@
     height: 12rem;
   }
 }
+
+ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4rem 0 4rem;
+  z-index: 1;
+  min-height: 5rem;
+  }
+
 
 @media (min-width: 640px){  
   ul{
@@ -35,6 +51,14 @@
     min-height: 12rem;
   }
 }
+
+
+.show-percents{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem 0 5rem;
+    min-height: 25rem;
+  }
 
 
 @media (min-width: 640px){  
