@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en" style={{fontSize:"65.5%"}}>
       <body>
           <Nav/>
-          <div className="div-layout overflow-x-hidden">
+          <div className="div-layout overflow-x-hidden pb-[5rem] sm:pb-[10rem] lg:pb-[10rem]">
             {children}
           </div>
 

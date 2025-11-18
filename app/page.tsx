@@ -4,18 +4,18 @@ import Image from "next/image";
 
 export default function Page(){
 
-
+// style={{position:"relative",width:"100%",height:"17.5rem"}}
     return(
         <>
 
-            <div className="youtube   lg:top-[10rem]; sm:top-[50%] sm:transform sm:-translate-y-1/2">
+            <div className="youtube top-[7rem]  lg:top-[10rem]; sm:top-[50%] sm:transform sm:-translate-y-1/2">
                 <iframe width="560" height="315" allow="autoplay; encrypted-media; fullscreen" allowFullScreen  src="https://www.youtube.com/embed/W-luC-oW-M0?si=QqTLz0PBcYPYx7BU&autoplay=1&mute=1&loop=1" title="YouTube video player" referrerPolicy="strict-origin-when-cross-origin" ></iframe>
             </div>
-            <div style={{position:"relative",width:"100%",height:"45rem"}}>
+            <div className="relative w-full h-[17.5rem] lg:h-[45rem] sm:h-[45rem]">
               <Image className="image-fade" src="/banner2.jpg" alt="" fill></Image>
             </div>
 
-            <Image className="mx-auto block w-400 h-160 sm:w-200 sm:h-80" src="/7k_logo.png" alt="" width={1000} height={200}></Image>
+            <Image className="mx-auto block lg:w-400 lg:h-160 sm:w-200 sm:h-80" src="/7k_logo.png" alt="" width={1000} height={200}></Image>
             {/* <div className="mt-16  border-red-300">
                 
                 <h2 className="text-center font-bold text-3xl">Overview</h2>
@@ -26,34 +26,34 @@ export default function Page(){
 
 
 
-            <div className="menu-container lg:gap-[8rem] sm:gap-[5rem] sm:mt-[3rem]">
+            <div className="menu-container gap-[1.5rem] lg:gap-[8rem] sm:gap-[5rem] sm:mt-[3rem]">
 
-                <div className="lg:w-[26.001rem] sm:w-[13.001rem] flex flex-col">
+                <div className="w-[] lg:w-[26.001rem] sm:w-[13.001rem] flex flex-col">
                     <p className="lg:text-[3rem] sm:text-[1.5rem] break-all lg:mb-12 sm:m-[0_0_1.3rem_0] text-center" style={{transform:"skewY(-4deg)"}}>Mercure's Lab</p>
-                    <Link href="/gacha" className="card border border-amber-500 lg:w-[26.001rem] lg:h-[46.001rem] sm:w-[13.001rem] sm:h-[23.001rem]" 
+                    <Link href="/gacha" className="card border border-amber-500 w-[8.6rem] h-[15.3rem] lg:w-[26.001rem] lg:h-[46.001rem] sm:w-[13.001rem] sm:h-[23.001rem]" 
                     style={{ backgroundImage: "url('/homepage/Kyle7_box.webp')"}}>
                     </Link>
                 </div>
                 
 
-                <div className="lg:w-[26.001rem] sm:w-[13.001rem] flex flex-col" style={{transform:"skewY(-4deg)"}}>
+                <div className=" w-[8.6rem] lg:w-[26.001rem] sm:w-[13.001rem] flex flex-col" style={{transform:"skewY(-4deg)"}}>
                     <p className="lg:text-[3rem] sm:text-[1.5rem] break-all lg:mb-12 sm:m-[0_0_1.3rem_0] text-center">Summon Heros</p>
-                    <div className="relative lg:w-[26.001rem] lg:h-[46.001rem] sm:w-[13.001rem] sm:h-[23.001rem]  ">
+                    <div className="relative w-[8.6rem] h-[15.3rem] lg:w-[26.001rem] lg:h-[46.001rem] sm:w-[13.001rem] sm:h-[23.001rem]  ">
                         <Image className=" opacity-20 border border-amber-500" src="/Fai.webp" alt="" fill style={{borderRadius:"15px",background:"#1b1b1b",objectFit:"fill"}}></Image>
                         <div className="overlay">
-                            <h1 className="text-2xl sm:text-center "style={{transform:"skewY(4deg)"}}>Comming soon</h1>
+                            <h1 className="text-[13px] sm:text-2xl lg:text-3xl text-center" style={{transform:"skewY(4deg)"}}>Comming soon</h1>
                         </div>
                     </div>
                 </div>
 
 
 
-                <div className="lg:w-[26.001rem] sm:w-[13.001rem] flex flex-col" style={{transform:"skewY(-4deg)"}}>
+                <div className=" w-[8.6rem] lg:w-[26.001rem] sm:w-[13.001rem] flex flex-col" style={{transform:"skewY(-4deg)"}}>
                     <p className="lg:text-[3rem] sm:text-[1.5rem] break-all  lg:m-[0_0_3rem_0] sm:m-[0_0_1.3rem_0] text-center">Fuse</p>
-                    <div className="relative lg:w-[26.001rem] lg:h-[46.001rem] sm:w-[13.001rem] sm:h-[23.001rem]">
+                    <div className="relative w-[8.6rem] h-[15.3rem] lg:w-[26.001rem] lg:h-[46.001rem] sm:w-[13.001rem] sm:h-[23.001rem]">
                         <Image className=" opacity-20 border border-amber-500 " src="/homepage/Teo7_box.webp" alt="" fill style={{borderRadius:"15px",background:"#1b1b1b",objectFit:"fill"}}></Image>
                         <div className="overlay transform ">
-                            <h1 className="text-2xl sm:text-center" style={{transform:"skewY(4deg)"}}>Comming soon</h1>
+                            <h1 className="text-[13px] sm:text-2xl lg:text-3xl text-center" style={{transform:"skewY(4deg)"}}>Comming soon</h1>
                         </div>
                     </div>
                 </div>
