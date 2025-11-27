@@ -276,3 +276,24 @@ button:disabled{
 
 
 }
+
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1); /* เด้งเกินขนาดนิดหน่อย */
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1); /* กลับสู่ขนาดปกติ */
+    opacity: 1;
+  }
+}
+
+/* บังคับให้รูปภาพเล่น Animation popIn เมื่อถูกสร้างใหม่ */
+.character-reveal-wrapper img {
+  animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
